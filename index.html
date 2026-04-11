@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - AmaOdia</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #eee; }
-        h2 { color: #34495e; margin-top: 1.5em; }
-        .highlight { background: #f9f9f9; padding: 15px; border-left: 5px solid #3498db; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 1.5em; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .highlight { background: #f4f7f6; padding: 15px; border-radius: 8px; border: 1px solid #d1d8e0; margin: 20px 0; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; color: #7f8c8d; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> October 24, 2024</p>
+    <p><strong>Effective Date:</strong> April 11, 2026</p>
 
-    <p>Welcome to <strong>AmaOdia</strong>. We respect your privacy and are committed to protecting any data processed by our application. This policy outlines our practices for the AmaOdia Android App.</p>
+    <p>Welcome to <strong>AmaOdia</strong>. We respect your privacy and are committed to protecting any data processed by our application. This policy outlines our practices regarding data handling, permissions, and third-party services for the AmaOdia Android App.</p>
 
     <div class="highlight">
         <strong>Transparency Note:</strong> AmaOdia is designed to function primarily offline. 
@@ -24,40 +29,47 @@
     </div>
 
     <h2>1. Information Handling (Local Storage)</h2>
-    <p>The App stores information <strong>locally</strong> on your device to provide a personalized experience. This data includes:</p>
+    <p>The App stores information <strong>locally</strong> on your device's private storage to provide a personalized experience. This data includes:</p>
     <ul>
         <li><strong>Search History:</strong> Saved locally via a Room database to allow you to revisit recent translations.</li>
         <li><strong>Favorites:</strong> Words you choose to save for quick access are kept on your phone's internal storage.</li>
     </ul>
-    <p><em>Note: This data is deleted automatically if you uninstall the application.</em></p>
+    <p><strong>Data Deletion:</strong> You can delete all locally stored data (History and Favorites) at any time by using the "Clear History" feature within the App settings or by uninstalling the application. All local data is permanently removed upon uninstallation.</p>
 
     <h2>2. Mandatory Permissions & Their Usage</h2>
     <ul>
-        <li><strong>Internet & Network State:</strong> Used to fetch dictionary updates, pronunciations, or translation data from our APIs. No personally identifiable information is transmitted.</li>
-        <li><strong>Clipboard Access:</strong> Our Floating Widget monitors the system clipboard to detect copied words for instant translation. This is processed entirely on-device.</li>
-        <li><strong>Overlay Permission (Display Over Other Apps):</strong> Allows the App to show the translation bubble while you are using other applications.</li>
-        <li><strong>Notification Permission:</strong> Required to deliver the "Word of the Day" updates and service status notifications.</li>
+        <li><strong>Internet & Network State:</strong> Used to serve advertisements via AdMob and provide dictionary updates. No personally identifiable information is transmitted by the app logic itself.</li>
+        <li><strong>Clipboard Access:</strong> Our Floating Widget monitors the system clipboard to detect copied words for instant translation. This process is handled entirely on-device; no clipboard data is ever uploaded.</li>
+        <li><strong>Overlay Permission (Display Over Other Apps):</strong> Required to show the translation bubble while you are using other applications.</li>
+        <li><strong>Notification Permission:</strong> Required to deliver "Word of the Day" updates and service status notifications.</li>
     </ul>
 
-    <h2>3. Third-Party Services</h2>
-    <p>We use trusted third-party SDKs that may collect anonymized technical data (like device model or crash logs) to improve app stability:</p>
+    <h2>3. Third-Party Services & Advertising</h2>
+    <p>We use trusted third-party SDKs that may collect anonymized technical data to improve stability and provide revenue through advertising:</p>
     <ul>
-        <li>Google Play Services (Updates & Licensing)</li>
-        <li>Google Text-to-Speech (Pronunciation)</li>
+        <li><strong>Google AdMob:</strong> Used to display advertisements. AdMob may collect and use identifiers (such as the Android Advertising ID) to show relevant ads and prevent fraud.</li>
+        <li><strong>Google Play Services:</strong> Used for app updates, licensing, and security.</li>
+        <li><strong>Google Text-to-Speech:</strong> Used locally to provide word pronunciations.</li>
     </ul>
 
-    <h2>4. Security</h2>
-    <p>We use industry-standard encryption and code obfuscation (R8/ProGuard) to protect the App’s internal logic. All local data is stored in the app's private sandbox, inaccessible to other applications.</p>
+    <h2>4. Data Attribution & Licensing</h2>
+    <p>The dictionary data in AmaOdia is sourced from the "Dictionary: English Odia word pairs" dataset by <strong>Soumendra Kumar Sahoo (2021)</strong>, available on Kaggle. This data is used under the <strong>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</strong> license.</p>
+    <p>Modifications were made to the original data structure (including indexing and unique ID mapping) to optimize performance for the Android platform. In accordance with the ShareAlike provision, the modified database is available to the community upon request.</p>
 
-    <h2>5. Children’s Privacy</h2>
-    <p>AmaOdia does not knowingly collect any personally identifiable information from children under the age of 13. Since no user accounts are required, we do not track user age.</p>
+    <h2>5. Security</h2>
+    <p>We use industry-standard encryption and code obfuscation (R8/ProGuard) to protect the App’s internal logic. All local data is stored in the app's private sandbox, which is inaccessible to other applications on your device.</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or feedback regarding this policy, please contact us at:</p>
+    <h2>6. Children’s Privacy</h2>
+    <p>AmaOdia does not knowingly collect any personally identifiable information from children. Since no user accounts or registrations are required, we do not track or store user ages.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this policy or wish to request the modified database, please contact us at:</p>
     <p><strong>Email:</strong> <a href="mailto:rajesh.codecanvas@gmail.com">rajesh.codecanvas@gmail.com</a></p>
 
-    <hr>
-    <p style="font-size: 0.8em; color: #7f8c8d;">© 2024 CodeCanvas - Rajesh. All rights reserved.</p>
+    <footer>
+        <p>© 2026 CodeCanvas - Rajesh. All rights reserved.</p>
+        <p>DOI: 10.34740/KAGGLE/DSV/2709373</p>
+    </footer>
 
 </body>
 </html>
