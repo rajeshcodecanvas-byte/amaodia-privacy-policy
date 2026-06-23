@@ -12,7 +12,6 @@
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
         footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; color: #7f8c8d; }
-        /* Distinct style for the clickable email */
         .contact-link { color: #e67e22; font-weight: bold; text-decoration: underline; }
         .contact-link:hover { color: #d35400; }
         a { color: #2980b9; text-decoration: none; }
@@ -41,16 +40,15 @@
 
     <h2>2. Mandatory Permissions & Their Usage</h2>
     <ul>
-        <li><strong>Internet & Network State:</strong> Used to serve advertisements via AdMob and provide dictionary updates. No personally identifiable information is transmitted by the app logic itself.</li>
+        <li><strong>Internet & Network State:</strong> Used to provide optional dictionary updates and facilitate essential app background functions. No personally identifiable information or user activity is tracked or transmitted.</li>
         <li><strong>Clipboard Access:</strong> Our Floating Widget monitors the system clipboard to detect copied words for instant translation. This process is handled entirely on-device; no clipboard data is ever uploaded.</li>
         <li><strong>Overlay Permission (Display Over Other Apps):</strong> Required to show the translation bubble while you are using other applications.</li>
         <li><strong>Notification Permission:</strong> Required to deliver "Word of the Day" updates and service status notifications.</li>
     </ul>
 
-    <h2>3. Third-Party Services & Advertising</h2>
-    <p>We use trusted third-party SDKs that may collect anonymized technical data to improve stability and provide revenue through advertising. These services may use cookies, device identifiers, or tracking technologies to serve relevant ads:</p>
+    <h2>3. Third-Party Services</h2>
+    <p>We use trusted third-party SDKs provided by Google to ensure application stability, accurate features, and proper installation licensing:</p>
     <ul>
-        <li><strong>Google AdMob:</strong> Used to display advertisements. AdMob may collect and use identifiers (such as the Android Advertising ID) to show relevant ads, personalize content, and prevent fraud.</li>
         <li><strong>Google Play Services:</strong> Used for app updates, licensing, and security.</li>
         <li><strong>Google Text-to-Speech:</strong> Used locally to provide word pronunciations.</li>
     </ul>
